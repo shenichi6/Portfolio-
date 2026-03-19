@@ -5,151 +5,168 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Herman Neveling Portfolio</title>
 
-<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Custom CSS -->
 <link rel="stylesheet" href="port.css">
-</head>
-<body class="bg-[#FAF9F6] text-[#4B3F3F] font-sans">
 
-<!-- HEADER / NAVBAR -->
-<header class="bg-[#3B5249] text-[#FAF9F6] shadow-lg">
-  <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
-    <h1 class="text-2xl font-bold tracking-wide">Herman Neveling</h1>
-    <ul class="flex gap-6 text-sm">
-      <li><a href="#hero" class="hover:text-[#C5B595]">Home</a></li>
-      <li><a href="#about" class="hover:text-[#C5B595]">About</a></li>
-      <li><a href="#skills" class="hover:text-[#C5B595]">Skills</a></li>
-      <li><a href="#projects" class="hover:text-[#C5B595]">Projects</a></li>
-      <li><a href="#contact" class="hover:text-[#C5B595]">Contact</a></li>
+</head>
+
+<body class="bg-[#FAF9F6] text-[#4B3F3F]">
+
+<!-- WELCOME SCREEN -->
+<div id="welcome">
+  <h1 class="text-4xl mb-4">Welcome 👋</h1>
+  <p class="mb-6">Herman Neveling Portfolio</p>
+  <button onclick="enterSite()" class="bg-[#C5B595] px-6 py-2 rounded">Enter</button>
+</div>
+
+<!-- HEADER -->
+<header class="bg-[#3B5249] text-white">
+  <nav class="max-w-6xl mx-auto flex justify-between p-4">
+    <h1 class="font-bold text-xl">Herman</h1>
+    <ul class="flex gap-4 text-sm">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main class="max-w-6xl mx-auto">
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left py-16 px-6 bg-[#F5F5DC]">
-    <div class="md:w-1/2 mb-6 md:mb-0">
-      <h2 class="text-4xl md:text-5xl font-bold mb-3 tracking-wide">Herman Neveling</h2>
-      <p class="text-xl md:text-2xl mb-4 text-[#5B4F3F]">Student</p>
-      <p class="text-[#4B3F3F] max-w-xl mb-6 leading-relaxed">
-        I love playing games and can't wait to make my own!  
-        I know some skills like HTML, Minecraft, Scratch, A+ N+, and Azure.
-      </p>
-      <a href="#projects" class="bg-[#8B7355] text-[#FAF9F6] px-6 py-3 rounded-lg hover:bg-[#7C6C5D] font-semibold">
-        View My Work
-      </a>
-    </div>
-    <div class="md:w-1/2 flex justify-center">
-      <img src="profile.jpg" alt="Herman Neveling" class="w-44 h-44 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-[#C5B595]">
-    </div>
-  </section>
+<!-- HERO -->
+<section id="hero" class="min-h-screen flex flex-col md:flex-row items-center gap-10 px-6">
+  
+  <div class="md:w-1/2 flex justify-center">
+    <img src="profile.jpg" class="w-52 h-52 rounded-full object-cover border-4 border-[#C5B595]">
+  </div>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="py-24 px-6 bg-[#FAF9F6]">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#3B5249] tracking-wide">About Me</h2>
-    <p class="max-w-2xl leading-relaxed text-lg md:text-xl">
-      I am a student at UniCollege learning coding like JavaScript, HTML, Python, and AI prompting.  
-      I am interested in design and coding and love creating fun projects.
+  <div class="md:w-1/2">
+    <h2 id="typing-name" class="text-4xl font-bold mb-3"></h2>
+    <p class="mb-4 text-xl">Student Developer</p>
+    <p class="mb-6">
+      I love games and want to create my own.  
+      Learning coding and building fun projects.
     </p>
-  </section>
+    <a href="#projects" class="bg-[#8B7355] text-white px-5 py-2 rounded">
+      View Work
+    </a>
+  </div>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="py-24 px-6 bg-[#EDE6DB]">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[#3B5249] tracking-wide">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">A+</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">N+</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Azure</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">ITF</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Word</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">PowerPoint</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Excel</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Outlook</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Access</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Minecraft Education</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Scratch</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Problem Solving</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">Computational Thinking</div>
-      <div class="bg-[#FAF9F6] p-6 rounded-lg shadow font-semibold text-center">CSS50</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6">
+  <h2 class="text-3xl mb-4 font-bold">About Me</h2>
+  <p>
+    I am studying coding including HTML, JavaScript and Python.
+    I enjoy designing and building creative projects.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-20 px-6 bg-[#EDE6DB]">
+  <h2 class="text-3xl mb-6 font-bold">Education</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3 class="font-bold">UniCollege</h3>
+      <p>Studying IT and Coding</p>
     </div>
-  </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="py-24 px-6 bg-[#FAF9F6]">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[#3B5249] tracking-wide">Projects</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Example project cards -->
-      <div class="bg-[#FAF9F6] rounded-lg shadow p-6 hover:scale-105 hover:shadow-lg transition transform">Project 1</div>
-      <div class="bg-[#FAF9F6] rounded-lg shadow p-6 hover:scale-105 hover:shadow-lg transition transform">Project 2</div>
-      <div class="bg-[#FAF9F6] rounded-lg shadow p-6 hover:scale-105 hover:shadow-lg transition transform">Project 3</div>
-      <div class="bg-[#FAF9F6] rounded-lg shadow p-6 hover:scale-105 hover:shadow-lg transition transform">Project 4</div>
+    <div class="timeline-item">
+      <h3 class="font-bold">Certifications</h3>
+      <p>A+, N+, Azure Fundamentals</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="py-24 px-6 bg-[#EDE6DB]">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#3B5249] tracking-wide">Contact</h2>
-    <form class="max-w-md flex flex-col gap-4">
-      <input type="text" placeholder="Your Name" class="p-3 border rounded text-lg">
-      <input type="email" placeholder="Your Email" class="p-3 border rounded text-lg">
-      <textarea placeholder="Your Message" class="p-3 border rounded text-lg"></textarea>
-      <button class="bg-[#8B7355] text-[#FAF9F6] p-3 rounded hover:bg-[#7C6C5D] font-semibold text-lg">
-        Send Message
-      </button>
-    </form>
-  </section>
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6">
+  <h2 class="text-3xl mb-6 font-bold">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    
+    <div class="card bg-white p-6 rounded">
+      <h3 class="font-bold mb-2">Game Project</h3>
+      <p>Simple game made with Scratch.</p>
+    </div>
+
+    <div class="card bg-white p-6 rounded">
+      <h3 class="font-bold mb-2">Website Project</h3>
+      <p>My first portfolio website.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 bg-[#EDE6DB]">
+  <h2 class="text-3xl mb-6 font-bold">Get in Touch</h2>
+
+  <form class="max-w-md flex flex-col gap-4">
+    <input type="text" placeholder="Name" class="p-3 border rounded">
+    <input type="email" placeholder="Email" class="p-3 border rounded">
+    <textarea placeholder="Comments" class="p-3 border rounded"></textarea>
+    <button class="bg-[#8B7355] text-white p-3 rounded">
+      Send
+    </button>
+  </form>
+</section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-[#3B5249] text-[#FAF9F6] py-6 mt-10">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 gap-2 md:gap-0">
-    <p>© 2026 Herman Neveling</p>
-    <div class="flex gap-4">
-      <a href="https://github.com/shenichi6" target="_blank" class="hover:text-[#C5B595]">GitHub</a>
-      <a href="https://www.tiktok.com/@shenichi6basic" target="_blank" class="hover:text-[#C5B595]">TikTok</a>
-    </div>
-  </div>
+<footer class="bg-[#3B5249] text-white text-center py-4">
+  © 2026 Herman Neveling
 </footer>
 
-<!-- Scripts for fade-in and header scroll -->
 <script>
-/* Fade-in sections on scroll */
+/* WELCOME */
+function enterSite(){
+  document.getElementById("welcome").classList.add("hide");
+}
+
+/* SCROLL ANIMATION */
 const sections = document.querySelectorAll("section");
-const observer = new IntersectionObserver((entries) => {
+
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
     }
   });
-}, { threshold: 0.1 });
-sections.forEach(section => observer.observe(section));
+},{threshold:0.2});
 
-/* Header background on scroll */
-const header = document.querySelector("header");
-window.addEventListener("scroll", () => {
+sections.forEach(sec => observer.observe(sec));
+
+/* HEADER */
+window.addEventListener("scroll",()=>{
+  const header = document.querySelector("header");
   if(window.scrollY > 50){
     header.classList.add("scrolled");
-  } else {
+  }else{
     header.classList.remove("scrolled");
   }
 });
 
-/* Staggered skill cards */
-const skillCards = document.querySelectorAll("#skills div");
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-      skillObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-skillCards.forEach(card => skillObserver.observe(card));
+/* TYPING EFFECT */
+const text = "Herman Neveling";
+const typingElement = document.getElementById("typing-name");
+
+let index = 0;
+
+function type(){
+  if(index < text.length){
+    typingElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(type, 100);
+  }
+}
+
+window.addEventListener("load", type);
 </script>
 
 </body>
